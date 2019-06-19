@@ -17,12 +17,13 @@
 <!-- Bootstrap -->
 <link rel="stylesheet" type="text/css"  href="css/bootstrap.css">
 <link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css">
-
+s
 <!-- Stylesheet
     ================================================== -->
-<link rel="stylesheet" type="text/css"  href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
 <link rel="stylesheet" type="text/css" href="css/nivo-lightbox/nivo-lightbox.css">
 <link rel="stylesheet" type="text/css" href="css/nivo-lightbox/default.css">
+<link rel="stylesheet" type="text/css" href="css/loading.css">
 <link href="https://fonts.googleapis.com/css?family=Inconsolata&display=swap" rel="stylesheet">
 <script type="text/javascript" src="js/modernizr.custom.js"></script>
 
@@ -34,17 +35,21 @@
     <![endif]-->
 </head>
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top" style="overflow: hidden;background: black;">
-<video muted="" autoplay="" loop="" class="full-height height-auto-lg hide-over" id="main-content" style="position: fixed;top: 0px;left: 0px;opacity: 0.32;background: black;z-index: 1;">
+<div class="row" id="loading">
+	<img alt="loading" src="img/loading.svg" style="display: block;margin: 0px auto;margin-top: 10%;">	
+</div>
+
+
+<video muted="" autoplay="" loop="" class="full-height height-auto-lg hide-over" id="main-content" style="display:none;position: fixed;top: 0px;left: 0px;opacity: 0.32;background: black;z-index: 1;">
   <source src="video/videoplayback.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
-<!-- Header -->
-<header id="header">
+<header id="header" style="display:none;">
   <div class="intro">
     <div class="container">
       <div class="row">
         <div class="intro-text simulate-text">
-          <h1>Estamos programando tu idea</h1>
+          <h1>Estamos desarollando tu idea!</h1>
           <hr>
           <p style="color: white;">
             Tenemos un ejercito de monos desarollando el sitio web.

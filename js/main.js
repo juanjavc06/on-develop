@@ -27,6 +27,12 @@ $('#nav').affix({
 	
   	// Portfolio isotope filter
     $(window).load(function() {
+      $("#header").css("display","block");
+      $("#main-content").css("display","block");
+      $("#loading").hide();
+      $("body").css("background","black");
+    background: black;
+
         var $container = $('.portfolio-items');
         $container.isotope({
             filter: '*',
